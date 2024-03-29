@@ -2,179 +2,90 @@
 @import '/src/scss/themes/theme-light.scss';
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300&display=swap');
 
-body{
-  margin: 0;
-  padding: 0;
-  background-color: #0D0D0D; /* Dark background for horror theme */
-  color: #E0E0E0; /* Light grey text for readability */
-  font-family: 'Raleway', sans-serif;
-  -webkit-font-smoothing: antialiased;
+html {
+	font-size: 62.5%;
+	-webkit-font-smoothing: antialiased;
+	margin: 0;
+	padding: 0;
+	background-color: #121212; /* Dark background for horror theme */
+	color: #E0E0E0; /* Light grey text for better readability */
 }
 
-.aligner {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.aligner, .center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-.title-container {
-  height: 50px;
+.title-container, .title-styles, header h1, .section-title, .project-title-settings {
+	font-family: 'Raleway', sans-serif;
+	color: #C0C0C0; /* Ghostly grey for text */
 }
 
-.title-styles {
-  font-family: 'Raleway', sans-serif;
-  font-size: 250%;
-  color: #F5F5F5; /* Brighter text for titles */
-}
-
-.header-icon {
-  height: 150px;
-  width: 150px;
+.header-icon, .language-icon, .skill-icon, .experience-icon {
+	color: #8B0000; /* Deep red for icons to add a subtle horror feel */
 }
 
 header {
-  position: relative;
-  height: 520px;
-  min-height: 450px;
-  width: 100%;
-  background-size: cover;
-  text-align: center;
-  overflow: hidden;
-  background-color: #1F1F1F; /* Dark header */
-  padding-top: 150px;
-  padding-bottom: 0;
+	background-color: #1A1A1A; /* Darker shade for header */
 }
 
-header .nav {
-  font: 18px/24px 'opensans-bold', sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  color: #8B0000; /* Deep red for navigation */
+.nav, .link-href, footer a, footer a:visited, .social-links a {
+	color: #FF6347; /* Tomato red for navigation and links */
 }
 
-.github-corner:hover .octo-arm {
-  animation: octocat-wave 560ms ease-in-out;
+.project-date, .modal-close, .close-icon {
+	border-color: #696969; /* Dark grey for borders */
+	background-color: #333; /* Dark background for project dates and modal close */
+	color: #FFF; /* White text for contrast */
 }
 
-.language-icon {
-  font-size: 50px;
-  cursor: pointer;
-  color: #8B0000; /* Deep red for icons */
+.skills-tile, .language, .slider-tab, #about, #resume, #portfolio, #skills, footer {
+	background-color: #121212; /* Consistent dark background across sections */
+	color: #E0E0E0; /* Maintaining readability with light grey text */
 }
 
-.project-date {
-  font-size: 16px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  padding: 8px 15px 2px 15px;
-  position: relative;
-  z-index: -500;
-  background-color: #696969; /* Dark grey */
-  color: white;
-}
-
-.skills-tile {
-  background-color: #262626; /* Dark tiles for skills */
-  padding: 10px 10px 5px 10px;
-  margin: 5px 0 5px 0;
-  color: #E0E0E0; /* Light grey text for contrast */
-}
-
-.language {
-  font-size: 25px;
-  background-color: #262626; /* Dark theme for language section */
-  padding-bottom: 10px;
-  padding-top: 80px;
-  color: #E0E0E0; /* Light grey text */
-}
-
-header h1 {
-  font-size: 400%;
-  font-weight: 600 !important;
-  color: #F5F5F5; /* Bright white for main header */
-  margin: 0 auto 18px auto;
-}
-
-.slider-image {
-  border: 5px solid #D7CAAA; /* Keeping slider image border */
-}
-
-.slider-tab {
-  background-color: #D7CAAA; /* Dark tan for slider tab */
-}
-
-.styles_typicalWrapper__1_Uvh::after {
-  display: none;
-}
-
-#about, #portfolio, #resume {
-  background: #1F1F1F; /* Dark theme for sections */
-  color: #E0E0E0; /* Light grey text */
-}
-
-#about h1, .project-title-settings, .section-title {
-  color: #C0C0C0; /* Ghostly grey for titles */
-}
-
-.foto img, .polaroid img {
-  display: block;
-  width: 100%;
+.polaroid img, .foto img {
+	border: 5px solid #D7CAAA; /* Keeping borders around images but could adjust for a darker theme */
 }
 
 .foto div, .polaroid span {
-  background: #333; /* Dark background for foto captions */
+	background-color: #202020; /* Darker backgrounds for polaroid and foto captions */
+	box-shadow: 0 4px 6px rgba(0, 0, 0, .7); /* Enhanced shadow for a subtle horror effect */
 }
 
-.link-href {
-  color: #8B0000; /* Deep red for links */
+/* Minimal animations for hover effects to add dynamic yet professional look */
+.foto div:hover, .polaroid span:hover, .portfolio-item .portfolio-item-caption:hover {
+	transform: scale(1.03);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, .9);
 }
 
-.wave, .font-trebuchet, .modal-description {
-  color: #E0E0E0; /* Light grey for text elements */
+/* Ensuring the horror theme doesn't compromise on usability and readability */
+* {
+	box-sizing: border-box;
 }
 
-footer {
-  background: #1F1F1F; /* Dark footer */
-  color: white;
+a:hover, a:focus, footer a:hover, footer a:focus, .social-links a:hover {
+	color: #F5F5F5; /* Brighter on hover to maintain usability */
 }
 
-.social-links a,
-.social-links a:visited {
-  color: #8B0000; /* Deep red for social links */
+/* Custom scrollbar for a cohesive look */
+::-webkit-scrollbar {
+	width: 12px;
 }
 
-.social-links a:hover,
-.social-links a:focus {
-  color: #F5F5F5; /* Lighter on hover for readability */
+::-webkit-scrollbar-track {
+	background: #1A1A1A;
 }
 
-/* Additional hover effects and horror-themed animations */
-@keyframes eerieGlow {
-  0%, 100% {
-    text-shadow: 0 0 10px #F00, 0 0 20px #F00, 0 0 30px #F00;
-  }
-  50% {
-    text-shadow: 0 0 5px #F00, 0 0 10px #F00, 0 0 15px #F00;
-  }
+::-webkit-scrollbar-thumb {
+	background-color: #8B0000; /* Deep red scrollbar thumb */
+	border-radius: 6px;
 }
 
-.experience-icon, .language-icon, .social-links a:hover {
-  animation: eerieGlow 2s infinite alternate;
+/* Media queries for responsiveness, crucial for high Lighthouse score */
+@media (max-width: 1170px) {
+	.experience-icon, .skill-icon, .language-icon {
+		font-size: 150%; /* Adjust icon sizes for smaller screens */
+	}
 }
-
-/* Adjusted for horror theme while maintaining professionalism */
-.main-badge, .experience-badge {
-  background-color: #AE944F !important; /* Keeping a touch of the original theme */
-  color: white;
-}
-
-.vertical-timeline-element-date, .modal-close, .close-icon {
-  color: #E0E0E0; /* Light grey for better contrast */
-}
-
-/* Ensure animations and shadows for an eerie effect */
-.github-corner:hover .octo-arm, .foto div:hover, .polaroid span:hover {
-  -webkit-transform: scale(1.01);
-  transform: scale(1.01);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
-}
-
