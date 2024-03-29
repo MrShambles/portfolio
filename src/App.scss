@@ -72,15 +72,6 @@ header .nav {
   color: white;
 }
 
-.projects-container {
-  display: flex;
-  justify-content: center; /* Center items horizontally */
-  align-items: center; /* Center items vertically if necessary */
-  flex-direction: row; /* Ensure items are laid out in a row */
-  flex-wrap: wrap; /* Allow items to wrap if more are added later */
-}
-
-
 .skills-tile {
   background-color: #262626; /* Dark tiles for skills */
   padding: 10px 10px 5px 10px;
