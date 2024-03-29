@@ -1,12 +1,17 @@
 {
   "basic_info": {
     "name": "Michael Roark",
-    "titles": ["Software Developer", "Student"],
+    "titles": ["Software Developer Student"],
     "social": [
       {
         "name": "github",
         "url": "https://github.com/MrShambles",
         "class": "fab fa-github"
+      },
+      {
+        "name": "linkedin",
+        "url": "https://www.linkedin.com/in/michael-roark/",
+        "class": "fab fa-linkedin"
       }
     ],
     "image": "myProfile.jpg"
@@ -15,14 +20,14 @@
     "icons": [
       {
         "name": "HTML",
-        "class": "devicon-html-plain",
+        "class": "devicon-html5-plain",
         "level": "1"
       },
       {
         "name": "CSS",
-        "class": "devicon-css-plain",
+        "class": "devicon-css3-plain",
         "level": "1"
-      },
+      },     
       {
         "name": "JavaScript",
         "class": "devicon-javascript-plain",
@@ -36,4 +41,5 @@
     ]
   }
 }
+
 
