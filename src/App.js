@@ -7,9 +7,6 @@ import Footer from "./components/Footer";
 import About from "./components/About";
 import Home from "./components/Home";
 
-
-
-
 class App extends Component {
   constructor(props) {
     super();
@@ -26,7 +23,7 @@ class App extends Component {
 
   loadResumeData = () => {
     $.ajax({
-      url: `res_primaryLanguage.json`,
+      url: `res_primaryLanguage.json`, 
       dataType: "json",
       cache: false,
       success: function (data) {
@@ -81,4 +78,3 @@ class App extends Component {
 }
 
 export default App;
-
